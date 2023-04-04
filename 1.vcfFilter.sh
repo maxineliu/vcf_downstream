@@ -1,6 +1,6 @@
 #! /bin/bash
-# This script is to filter VCF through the process that: 1) exclude BND svs (difficult to analysis so leave them for now); 2) keep SVs that pass all filters; 3)  
 #Usage: ./vcfFiler.sh <vcf file>
+# This script is to filter VCF through the process that: 1) exclude BND svs (difficult to analysis so leave them for now); 2) keep SVs that pass all filters; 3) keep SVs that MAF > 0.05, SVLEN < 100kb, supporting reads < 60, F_MISSING < 0.2; 4) exclude unmapped scaffolds; 5) exclude SVs that located in identical locus 
 
 filename=`basename $1 .vcf`
 
