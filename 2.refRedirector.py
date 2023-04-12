@@ -1,8 +1,8 @@
 #!/usr/local/bin/ python3
 # -*- coding: utf-8 -*-
-
+# this script takes a fasta file and a vcf file, and redirect NULL data in VCF file's ref column to the actual base of the start location of variants. 
 # usage: refRedirector.py [-h] fna_file vcf_file
-# Refer to FASTA file, redirect NULL data in VCF file's ref column to the actual base of the start location of variants. 
+ 
 # positional arguments:
 #   fna_file    The name of FASTA file
 #   vcf_file    The name of VCF file
