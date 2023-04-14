@@ -22,7 +22,7 @@ args = parser.parse_args()
 fna_file = args.fna_file
 vcf_file = args.vcf_file
 # Generate the output VCF file name
-vcf_out_file = vcf_file.replace("vcf", "REREF.vcf")
+vcf_out_file = vcf_file.replace("vcf", "reRef.vcf")
 
 # Creat I/O objects
 vcf_in = VariantFile(vcf_file, 'r')
